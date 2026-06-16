@@ -1,4 +1,4 @@
-from src.tools.tools import web_search,scrape_url
+from src.pipeline.pipeline import run_research_pipeline
 
-result=web_search.invoke("what is the latest research on using AI for climate change mitigation")
-print(result)
+topic="The impact of AI on the job market in 2026"
+run_research_pipeline(topic)
